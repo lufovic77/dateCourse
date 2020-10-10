@@ -5,7 +5,6 @@
  */
 (function ($) {
 
-var totalPrice=0;
  var $window = $(window),
  $banner = $('#banner'),
  $body = $('body');
@@ -22,6 +21,7 @@ xxsmall: [null, '360px']
 });
 
  // Play initial animations on page load.
+/*
  $window.on('load', function () {
 	var acc = document.getElementsByClassName("accordion");
 	var i;
@@ -35,13 +35,11 @@ xxsmall: [null, '360px']
 			 $body.removeClass('is-preload');
 			 }, 100);
  });
-
-//결제 버튼 누르면 반응
-$("#search_btn").click(function () {
-	if(totalPrice==0){
-		alert("먼저 메뉴를 고르세요");
-		return;
-	}
+*/
+//다음 페이지로 갑시다.
+$(".start_btn").click(function () {
+	console.log("hi");
+	location.replace("2th_index.html");
 });
 
 
