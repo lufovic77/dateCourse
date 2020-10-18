@@ -38,8 +38,7 @@ xxsmall: [null, '360px']
 */
 //다음 페이지로 갑시다.
 $(".start_btn").click(function () {
-	console.log("hi");
-	location.replace("2th_index.html");
+	location.href="2nd_index.html";
 });
 
 
