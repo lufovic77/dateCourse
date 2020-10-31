@@ -249,6 +249,8 @@ hr {
 	width: 100%;
 	height:500px;
 }
+.center_container{
+}
 /* Inner */
 .inner {
   margin: 0 auto;
@@ -283,36 +285,24 @@ button,
   text-align: center;
   text-decoration: none;
   white-space: nowrap; }
-  input[type="submit"].small,
-  input[type="reset"].small,
-  input[type="button"].small,
-  button.small,
-  .button.small {
-    font-size: 0.8rem;
-    height: 2.4375rem;
-    line-height: 2.4375rem;
-    padding: 0 1.25rem; }
-  input[type="submit"].large,
-  input[type="reset"].large,
-  input[type="button"].large,
-  button.large,
-  .button.large {
-    font-size: 1.35rem;
-    height: 4.0625rem;
-    line-height: 4.0625rem;
-    padding: 0 2rem; }
-  input[type="submit"].wide,
-  input[type="reset"].wide,
-  input[type="button"].wide,
-  button.wide,
-  .button.wide {
-    min-width: 13rem; }
-  input[type="submit"].icon:before,
-  input[type="reset"].icon:before,
-  input[type="button"].icon:before,
-  button.icon:before,
-  .button.icon:before {
-    margin-right: 0.5rem; }
+  input[type="submit"].find_btn,
+  input[type="reset"].find_btn,
+  input[type="button"].find_btn,
+  button.find_btn,
+  .button.find_btn {
+	text-align: center;
+	font-size: 20px;
+	color: rgb(234 47 116);
+	border: solid 3px;
+	border-color: #e81563;
+	background-color: #e81563;
+	height:50px;
+	float:left;
+	margin-left:0px;
+	border-radius: 100px;
+	flex:1;
+	position: relative;}
+
   input[type="submit"].start_btn,
   input[type="reset"].start_btn,
   input[type="button"].start_btn,
@@ -363,20 +353,20 @@ button,
   button:hover,
   .button:hover { /*얘는 모든 버튼들의 hover 즉 마우스 가져다 댓을때의 effect를 나타냄*/
 /*    box-shadow: inset 0 0 0 1px #;*/
-    color: #ce1b28 !important; }
+    color: rgb(234 47 116) !important; }
     input[type="submit"]:hover:active,
     input[type="reset"]:hover:active,
     input[type="button"]:hover:disabled,
     button:hover:active,
     .button:hover:active {
-      background-color: rgba(255, 255, 255, 0.25); }
+      background-color: rgb(234 47 116); }
   input[type="submit"].primary,
   input[type="reset"].primary,
   input[type="button"].primary,
   button.primary,
   .button.primary {
     box-shadow: none;
-    background-color: #ce1b28;
+    background-color: rgb(234 47 116);
     color: #ffffff !important; }
     input[type="submit"].primary:hover,
     input[type="reset"].primary:hover,
@@ -414,9 +404,14 @@ textarea {
   color: inherit;
   display: block;
   outline: 0;
+
+	margin-left: 50%;
+	transform:translate(-50%, -50%); /* 가운데 정렬 */
+ 
   padding: 0 1rem;
   text-decoration: none;
-  width: 100%; }
+  width: 30%; 
+  float: left;}
   input[type="text"]:invalid,
   input[type="password"]:invalid,
   input[type="email"]:invalid,
@@ -542,8 +537,8 @@ textarea {
   input[type="url"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #ce1b28;
-    box-shadow: 0 0 0 1px #ce1b28; }
+    border-color: rgb(234 47 116);
+    box-shadow: 0 0 0 1px rgb(234 47 116); }
 
 select {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(0, 0, 0, 0.25)' /%3E%3C/svg%3E"); }
@@ -2680,7 +2675,7 @@ background-repeat: no-repeat;
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-	background-color: #ccc;
+	background-color: rgb(234 47 116);
 }
 
 /* Style the accordion panel. Note: hidden by default */
